@@ -1,0 +1,17 @@
+FROM node:alpine
+
+# Install bash
+RUN /bin/sh -c "apk add --no-cache bash" -qq && \
+    apk update -qq && \
+    apk add vim -qq
+
+WORKDIR '/app'
+
+COPY package.json .
+RUN npm install > /dev/null 2>&1 
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]
