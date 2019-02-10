@@ -1,6 +1,6 @@
 ### Docker ###
 To quickly launch this project, open Terminal/ Git Bash and run the following command: `docker-compose up -d`
-This will create an image, `frontend_image:1.0.0`, running in a container, `frontend_container`, on port `localhost:3000` and container's port `3000`.
+This will create an image, `frontend_image:0.1.0`, running in a container, `frontend_container`, on port `localhost:3000` and container's port `3000`.
 
 To kill the running container and remove the image, as well as, all dangling images, run the following command:
     `docker-compose down;docker images -a | grep "frontend_image" | awk '{print $3}' | xargs docker rmi;docker image prune -f`

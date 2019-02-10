@@ -5,7 +5,7 @@ services:
       context: ./
       dockerfile: Dockerfile.dev
     container_name: frontend_container
-    image: frontend_image:1.0.0
+    image: frontend_image:0.1.0
     ports: 
       - "3000:3000"
     volumes:
