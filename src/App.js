@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>
-          <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="App-logo" alt="logo" />
             <img src={logo} className="App-logo" alt="logo" />
             <img src={logo} className="App-logo" alt="logo" />
             <img src={logo} className="App-logo" alt="logo" />
@@ -112,8 +112,7 @@ class App extends Component {
             className="App-link"
             href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Moby_Dick_final_chase.jpg"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             Watch Captain Ahab try to contain Moby!
           </a>
         </header>
