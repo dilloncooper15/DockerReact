@@ -4,7 +4,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile.dev
-    container_name: frontend_container
+    container_name: frontend_web_container
     image: frontend_web_image:0.1.0
     ports: 
       - "3000:3000"
@@ -15,6 +15,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
+    container_name: frontend_test_container
     image: frontend_tests_image:0.1.0
     volumes:
       - /app/node_modules
