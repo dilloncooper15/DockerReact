@@ -1,0 +1,10 @@
+version: '3'
+services:
+  prod:
+    build:
+      context: ./
+      dockerfile: prod.Dockerfile
+    container_name: frontend_prod_container
+    image: frontend_prod_image:0.1.0
+    ports: 
+      - "8080:80"
