@@ -3,7 +3,7 @@ services:
   web:
     build:
       context: ./
-      dockerfile: Dockerfile.dev
+      dockerfile: dev.Dockerfile
     container_name: frontend_web_container
     image: frontend_web_image:0.1.0
     ports: 
@@ -14,7 +14,7 @@ services:
   tests:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: dev.Dockerfile
     container_name: frontend_test_container
     image: frontend_tests_image:0.1.0
     volumes:
