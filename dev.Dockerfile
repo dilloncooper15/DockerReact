@@ -15,9 +15,6 @@ RUN npm install > /dev/null 2>&1
 # Copy remaining project files, not outlined in .dockerignore
 COPY . .
 
-# Grant permissions
-RUN chmod +x ./entrypoint.sh
-
 EXPOSE 3000
 
 # ENTRYPOINT ./entrypoint.sh
