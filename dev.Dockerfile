@@ -6,7 +6,7 @@ RUN /bin/sh -c "apk add --no-cache bash" -qq && \
     apk add vim -qq
 
 # Set current working directory
-WORKDIR '/app'
+WORKDIR /app
 
 # Copy and install dependencies in package.json
 COPY package.json ./
