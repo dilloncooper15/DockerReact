@@ -3,7 +3,7 @@ services:
   prod:
     build:
       context: ./
-      dockerfile: prod.Dockerfile
+      dockerfile: Dockerfile
     container_name: frontend_prod_container
     image: frontend_prod_image:0.1.0
     ports: 
