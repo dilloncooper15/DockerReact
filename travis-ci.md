@@ -1,5 +1,5 @@
 ---
-description: Travis-CI overview
+description: Travis-CI overview.
 ---
 
 # Travis-CI

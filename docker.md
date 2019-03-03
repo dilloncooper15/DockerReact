@@ -1,5 +1,5 @@
 ---
-description: Docker overview
+description: Docker overview.
 ---
 
 # Docker
